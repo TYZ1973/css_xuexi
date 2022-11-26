@@ -5,6 +5,10 @@
 body{
 
     background-color: #f3f5f7;
+    width: 1200px;
+    height: 3000px;
+    margin: auto;
+    
 }
 li{
      list-style: none;
@@ -202,3 +206,40 @@ li{
     color: #050505;
 
 }
+
+.goods{
+height: 60px;
+background-color: #fff;
+margin-top: 10px;
+box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+line-height: 60px;
+
+}
+.goods h3{
+    font-size: 16px;
+    color: #00a4ff;
+    margin: 0 30px;
+    float: left;
+}
+
+.goods-items{
+
+    float: left;
+    color: rgb(182, 182, 182);
+}
+
+.goods-items a {
+
+    font-size: 16px;
+    color: #050505;
+    margin: 0 25px;
+    text-decoration: none;
+}
+
+.go-three{
+    float: right;
+    margin-right: 45px;
+    font-size: 14px;
+    color: #050505;
+}
+
