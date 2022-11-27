@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    .father{
+        width: 400px;
+        height: 400px;
+        background-color: aquamarine;
+        margin: 100px;
+        position: absolute;
+        /* 父盒子如果没用定位的话  儿子会根据浏览器为基准对齐 (document) */
+        /* 父亲只要有定位，儿子就会根据父亲来定位(任意定位absolute ，relative) */
+    }
+    .son{
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        position: relative;
+        top: 50px;
+        left: 50px;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <div class="father">
+    <div class="son"></div>
+    </div>
+
+</body>
+</html>

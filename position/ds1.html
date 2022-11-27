@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            .oo{
+                display: none;
+                /* 隐藏且不保留位置 */
+                width: 200px;
+                height: 200px;
+                background-color: aquamarine;
+            }
+
+            .tt{
+                width: 50px;
+                height: 250px;
+                background-color: blueviolet;
+                visibility: hidden;
+            }
+            .sa{
+
+                width: 100px;
+                height: 100px;
+                background-color: black;
+            }
+            .ds{
+                display: block;
+                 
+            }
+            .vss{
+                visibility: visible;
+            }
+            .vssc{
+                position: absolute;
+                top: 200px;
+
+            }
+            /* display 隐藏后不占用位置
+            visibility 隐藏后占用位置 */
+        </style>
+
+</head>
+
+<body>
+    <button onclick="show()">xxx</button>
+    <button onclick="vshow()" class="vssc">vs</button>
+    <div class="oo" id="ol"></div>
+    <div class="tt"></div>
+    <div class="sa"></div>
+</body>
+<script>
+    var n=0;
+    var nv=0;
+    function show(){
+        if(!n){
+        document.getElementsByClassName("oo")[0].setAttribute("class","oo ds")
+    }else{
+        document.getElementsByClassName("oo")[0].setAttribute("class","oo")
+   
+    }
+    n=!n;
+}
+function vshow(){
+    if(!n){
+        document.getElementsByClassName("tt")[0].setAttribute("class","tt vss")
+    }else{
+        document.getElementsByClassName("tt")[0].setAttribute("class","tt")
+   
+    }
+    n=!n;
+}
+
+
+</script>
+</html>

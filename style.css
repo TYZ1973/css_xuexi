@@ -92,6 +92,7 @@ li{
     border: 1px solid #00a4ff;
     padding-left: 10px;
     color: #ccc;
+    outline: none;
     
 }
 .search button{

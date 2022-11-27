@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            margin: 100px auto
+        }
+        .cover{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: rgb(0, 0, 0,.3) url(images/播放按钮1.png) no-repeat center center ;
+
+        }
+        img{
+            width: 500px;
+            height: 500px;
+        }
+
+      .box:hover .cover{
+        display: block;
+      }  
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="cover"></div>
+        <img src="images/15.jpg" alt="">
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .father{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(241, 47, 112);
+        }
+
+        .son1{
+            position: relative;
+            top: 0;
+            left: 0;
+            /* absolute 绝对定位 不保留原来位置 需要和有定位的父亲一起用  相对定位保留位置*/
+            width: 200px;
+            height: 200px;
+            background-color: rgb(193, 225, 11);
+
+        }
+        .son2{
+            width: 250px;
+            height: 250px;
+            background-color: skyblue;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="father">f
+
+    <div class="son1">s1</div>
+    
+    <div class="son2">s2</div>
+
+    </div>
+</body>
+</html>
