@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav a{  /*复合选择器   后代选择器*/
+
+            color: aquamarine;   
+        }
+
+        .nav2 ul li{
+
+            list-style: none;
+        }
+
+        div>a{
+
+            /*子元素 选择器  亲儿子 不包含孙子*/
+        }
+
+        li.dd{
+
+            /* 交集选择器 */
+        }
+        p, span , ullc{ 
+            color: blue;
+            /*并集选择器*/
+        }
+        
+    </style>
+
+</head>
+
+<body>
+        <p></p>
+        <p></p>
+        <p></p>
+        <span></span>
+        <span></span>
+        <span></span>
+    <div class="nav">
+        <a href="">1111</a>
+        <a href="">2222</a>
+        <a href="">3333</a>
+    </div>
+
+        <a href="">21111</a>
+        <a href="">22222</a>
+        <a href="">23333</a>
+
+
+        <ul class="ullc">
+            <li class="dd">A1</li>
+            <li>A2</li>
+            <li>A3</li>
+        </ul>
+
+        <div class="nav2">
+            <ul>
+                <li>B1</li>
+                <li>B2</li>
+                <li>B3</li>
+            </ul>
+        </div>
+</body>
+</html>

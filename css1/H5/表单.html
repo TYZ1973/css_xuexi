@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            cursor: default;
+        }
+        button[disabled]{
+            cursor: alias;
+        }
+
+        div[class="teemo"]{
+
+        }
+        div[class^="teemo"]{
+
+        }
+        /* class^="teemo" 开头 class$="teemo" 结尾class*="teemo" 全部*/
+    </style>
+    </head>
+<body>
+    
+    <form action="">
+        <ul>
+            <li>邮箱<input type="email"   autofocus="true" autocomplete="on"></input></li>
+            <li>网址<input type="url"></input ></li>
+            <li>日期<input type="date"></input></li>
+            <li>时间<input type="time"></input></li>
+            <li>数量<input type="number"></input></li>
+            <li>tel<input type="tel"></input></li>
+            <li>搜索<input type="search"></input></li>
+            <li>颜色<input type="color"></input></li>
+            <li>文字<input type="text" placeholder="文字" autocomplete="true" required="required"></li>
+            <li><input type="submit" value="提交" ></li>
+        </ul>
+    </form>
+
+    <button>按钮</button>
+    <button disabled="disabled">按钮(禁用)</button>
+    <button>按钮</button>
+    <button>按钮</button>
+
+
+    <br><hr>
+    <div class="teemo1"></div>
+    <div class="teemo2"></div>
+    <div class="teemo3"></div>
+    <div class="teemo4"></div>
+    <div class="teemo5"></div>
+    <div class="ab1teemo"></div>
+    <div class="ab2teemo"></div>
+    <div class="ab3teemo"></div>
+</body>
+</html>
