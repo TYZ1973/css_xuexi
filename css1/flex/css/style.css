@@ -1,0 +1,241 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1/5 tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+
+}
+a{
+
+    text-decoration: none;
+    color: #222;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-index{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;        /* 固定的盒子应该有宽度 */  
+    transform: translateX(-50%); 
+    -webkit-transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 540px;
+    height:50px;
+    /* background-color: palevioletred; */
+    flex-direction: row;
+    background-color: #F6F6F6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+}
+.search{
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex: 1;
+    font-size: 14px;
+    color: #666;
+    padding-left: 34px;
+    margin: 8px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0,0, .2);
+}
+
+.search::before{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+     content: "";
+     display: block;
+     width: 34px;
+     height: 34px;
+     background: url(../imagesFlex/sousuo.png) no-repeat 3px 3px;
+     
+}
+.user{
+    text-align: center;
+    width: 42px;
+    height: 50px;
+    font-size: 14px;
+    color: #2eaae0;
+    margin-top: 4px;
+}
+
+.user::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    background: url(../imagesFlex/tabbar1.png) no-repeat -8px -152px ;    
+    border-radius: 50%;
+}
+
+/* focus */
+.focus img{
+    width: 100%;
+}
+.focus{
+    margin-top: 52px;
+}
+
+
+/* .local-nav */
+
+.local-nav{
+    display: flex;
+    height: 64px;
+    margin: 3px 4px;
+    background-color: #fff;
+    border-radius: 8px;
+    flex-direction: row;
+    
+}
+.local-nav li{
+
+    flex: 1;
+    
+}
+.local-nav a{
+
+    display: flex;
+    flex-direction: column;
+     align-items: center;  /*单行 */
+     font-size: 12px;
+}
+/* .local-nav-icon{ */
+    .local-nav li [class^="local-nav-icon"]{
+    width: 34px;
+    height: 34px;
+    background-color: aqua;
+    margin-top: 8px;
+    background: url(../imagesFlex/tabbar1.png) no-repeat -7px -6px;
+}
+.local-nav li .local-nav-icon-icon2{
+    background-position: -7px -54px;
+}
+.local-nav li .local-nav-icon-icon3{
+    background-position: -7px -102px;
+}
+.local-nav li .local-nav-icon-icon4{
+    background-position: -7px -150px;
+}
+.local-nav li .local-nav-icon-icon5{
+    background-position: -7px -198px;
+}
+
+
+nav{
+
+    border-radius: 8px;
+    margin: 0 4px 3px;
+    overflow: hidden;   /* 为了显示nav的小圆角 */
+    
+
+}
+.nav-common{
+    display: flex;
+    height: 88px;
+    /* border: 1px solid rosybrown; */
+    /* background-color: #2eaae0; */
+}
+.nav-common:nth-child(1){
+
+    background: -webkit-linear-gradient(left, rgb(65, 135, 240),rgb(70, 145, 244));
+}
+.nav-common:nth-child(2){
+
+    background: -webkit-linear-gradient(left, rgb(251, 140, 29),rgb(251, 192, 63));
+}
+.nav-common:nth-child(3){
+
+    background: -webkit-linear-gradient(left, rgb(38, 245, 24),rgb(80, 249, 61));
+}
+.nav-common:nth-child(2){
+
+    margin: 3px 0;
+}
+.nav-items{
+        
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.nav-items:nth-child(-n+2){
+
+    border-right: 1px solid #fff;
+}
+
+.nav-items a{
+    flex: 1;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    color: #ccc;
+    font-size: 14px;
+/* 文字阴影 */
+    text-shadow: 1px 1px rgba(0, 0,0,.2);
+
+}
+.nav-items a:nth-child(1){
+   
+    border-bottom: 1px solid #fff;
+}
+.nav-items:nth-child(1) a {
+
+    border: 0;
+    background: url(../imagesFlex/weekend.png) no-repeat 0px 0px;
+    background-size: 65px auto;
+    background-position: bottom center;
+}
+
+.subnav-entry{
+    display: flex;
+    border-radius: 8px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin: 0px 4px;
+    padding: 3px 0px;
+    /* max-width: 540px; */
+    
+}
+
+.subnav-entry li{
+    
+    flex: 20%;
+    height: 55px;
+    /* border: 1px solid black; */
+}
+.subnav-entry a{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.subnav-entry-icon{
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+    background: url(../imagesFlex/weekend.png) no-repeat;
+    background-size: 28px auto;
+
+}

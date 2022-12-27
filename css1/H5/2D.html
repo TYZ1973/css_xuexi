@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            body{
+                height: 2000px;
+            }
+            div[class*="b"]{
+                float: left;
+                width: 200px;
+                height: 200px;
+                background-color: aquamarine;
+                margin-right: 20px;
+                border: 1px solid black;
+            }
+            .b1{
+                /* transform: translate(x,y);  */
+                /* x y  可以用像素px  或者 百分比 50%等等来使用  百分比指盒子div 自身的长 宽的百分比 */
+                transform: translate(50px , 150px);
+            }
+            .b2{
+                transform: translateY(50%)
+            }
+            .b3{
+
+                margin-top: 200px;
+                transform: rotate(45deg);
+                transition: all 0.5s;
+                
+            }
+            .b3:hover{
+
+                transform: rotate(245deg);
+                
+            }
+            div.b4{
+
+                background-color: blue;
+               margin-top: 400px;
+               transform-origin: left bottom;
+               /* 旋转中心点设置  也可以用 px来确定位置*/
+               transition: all 1s;
+            }
+            div.b4:hover{
+                transform: rotate(360deg);
+            }
+            div.b5{
+
+                margin-left: 300px;
+            }
+            .b5:hover{
+
+                transform: scale(2);
+                /* transform: scale(x,y);  可以设置长宽，也可以只写一个倍数 
+                可以用 transform-origin 来这是缩放中心点*/
+            }
+        </style>
+</head>
+<body>
+    
+    <div class="b1">translate : 右100 下100</div>
+    <div class="b2">translateY </div>
+    <div class="b3">rotate</div>
+    <div class="b4">rotate-origin</div>
+    <hr>
+    <div class="b5">scale</div>
+    
+    
+</body>
+</html>

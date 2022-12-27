@@ -1,0 +1,13 @@
+fontFa{
+    font-family: 'Courier New', Courier, monospace;  /* 字体样式*/
+}
+
+fontW{
+
+    font-weight: 700; /*字体粗细*/
+    font-style: italic; /*字体风格，这里是斜体*/
+    line-height: 24px;
+    text-decoration: dashed; /*none blink underline overline line-through*/
+    text-indent: 2em; /*首行缩进*/
+    
+}

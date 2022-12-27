@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            ul li:first-child{
+                color: #000;
+            }
+            ul li:last-child{
+                color: aqua;
+            }
+            ul li:nth-child(5){
+                color: blueviolet;
+            }
+            ul li:nth-child(even){
+                background-color: rgb(255, 91, 241);
+            }
+            /* even 也可以用 2n代替     2n+1奇数   或者 n+5从第五个开始   5n （5 10 15 .。。。）   -n+5 前五个等等 */
+
+            div span:first-of-type{
+                /* 代表选择第一个span  而不是 span 的第一个孩子 */
+            }
+            div span:last-of-type{
+
+            }
+            div span:nth-last-of-type(){
+
+            }
+
+            /* :first-child 与 :first-of-type 区别在于 前面的不区分类型  后面的区分 */
+
+      </style>
+
+</head>
+
+<body>
+    <div>
+        <p>ppp</p>
+        <span>sss1</span>
+        <span>sss2</span>
+        <span>ss3</span>
+    </div>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+</body>
+</html>
