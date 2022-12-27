@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(19, 235, 163);
+        display: grid;
+        grid-template-rows: 100px repeat(2,1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        /* 分几行 几列 */
+        gap: .2667rem .5333rem;
+        /* 间距 */
+       
+    }
+    .item{
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        background-color: blueviolet;
+        text-align: center;
+        font-size: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .one{
+        grid-column: span 2;
+        /* 跨行 2 3  */
+        /* grid-row: span 2 ; */
+    }
+    .two{
+        grid-row: span 3;
+        /* 4 跨行8  12  。 注释掉12  */
+    }
+
+    .three{
+
+        grid-area: span 2 / span 2;
+        /* 跨行 两行 两列 */
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item one">2</div>
+        <!-- <div class="item">3</div> -->
+        <div class="item two" >4</div>
+        <div class="item three">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <!-- <div class="item">8</div> -->
+        <!-- <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div> -->
+        <!-- <div class="item">12</div> -->
+    </div>
+</body>
+</html>
